@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Pagina Principal</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="Images/favicon.ico">
+	<link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="Images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="Images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+        <div class="header">
+            <div class="content">
+                <div class="three columns">
+                    <img src="/Images/logo.png"/>
+                </div>
+                <div class="eight columns">
+                    <nav class="mainmenu">
+                        <ul>
+                            <li class="headphone">
+                                <a href="">AUDICULAR</a>
+                            </li>
+                            <li class="lcd">
+                                <a href="">LCD</a>
+                            </li>
+                            <li class="musicas">
+                                <a href="">MUSIC</a>
+                            </li>
+                            <li class="notepad">
+                                <a href="">NOTEPAD</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <p>
+                        Hola para todo aquellos que estan viendo esta pagina que fue diseñado en el aprendizaje del video tutorial que fue otorgado en la clase de seminario de sistemas. 
+                    </p>
+                </div>
+            </div>
+        </div>
+	</div><!-- container -->
+        <div class="cuerpo">
+            <img src="~/Images/img1.jpg" />
+        </div>
+
+<!-- End Document
+================================================== -->
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>@*
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>*@
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
